@@ -2,29 +2,62 @@
 <fof>
 	<!-- Component back-end options -->
 	<backend>
+		
 		<!-- Dispatcher options -->
 		<dispatcher>
-			<option name="default_view">cpanel</option>
+			<option name="default_view">profiles</option>
 		</dispatcher>
+		
 		<view name="*">
 			<!-- Per-task ACL settings. The star task sets the default ACL privileges for all tasks. -->
 			<acl>
 				<task name="*">true</task>
 			</acl>
 		</view>
+		
+		<view name="profiles">
+			<!-- Task mapping -->
+			<taskmap>
+				<task name="browse">add</task>
+				<task name="read">add</task>
+				<task name="edit">add</task>
+			</taskmap>
+			<!-- Per-task ACL settings. An empty string removes ACL checks. -->
+			<acl>
+				<task name="add"></task>
+				<task name="save"></task>
+			</acl>
+		</view>
+		
 	</backend>
 	
 	<!-- Component front-end options -->
 	<frontend>
 		<!-- Dispatcher options -->
 		<dispatcher>
-			<option name="default_view">Matrimony</option>
+			<option name="default_view">profiles</option>
 		</dispatcher>
-		<!-- Options common for all views -->
+		
 		<view name="*">
 			<!-- Per-task ACL settings. The star task sets the default ACL privileges for all tasks. -->
 			<acl>
 				<task name="*">true</task>
+			</acl>
+		</view>
+		
+		<!-- Options common for all views -->
+		<view name="profiles">
+			<!-- Per-task ACL settings. The star task sets the default ACL privileges for all tasks. -->
+			<!-- Task mapping -->
+			<taskmap>
+				<task name="browse">add</task>
+				<task name="read">add</task>
+				<task name="edit">add</task>
+			</taskmap>
+			<!-- Per-task ACL settings. An empty string removes ACL checks. -->
+			<acl>
+				<task name="add"></task>
+				<task name="save"></task>
 			</acl>
 		</view>
 	</frontend>
