@@ -1,0 +1,64 @@
+.search-bride-groom, .search-fage, .search-tage, .search-caste {
+padding-right:0px;
+}
+.search-bride-groom{
+padding-left:0px;
+}
+	
+.search-opt-modal #myModal {
+background: none repeat scroll 0 0 #fff;
+max-height: 200px;
+overflow: hidden;	
+margin-top:100px;
+}	
+.search-fage, .search-tage {
+display:inline-flex;
+}
+
+.search-fage {
+padding:0px;
+}
+
+#from-age, #to-age {
+max-width:50px;
+}
+
+.search-tage, .search-caste {
+padding-left:0px;
+}
+
+.profile-search-results .control-label {
+margin-right:15px;
+margin-top:-5px;
+font-weight:bold;
+padding-right:0px;
+}
+
+.profile-search-results {
+list-style:none;
+}
+
+.profile-search-results .control-group {
+display:inline-block;
+}
+
+.search-opt-results {
+top:200px;
+position:relative;
+left:100px;
+}
+
+.profile-search-results li {
+margin-top:30px;
+}
+
+.matrimony-profile-results {
+border-bottom: 1px solid #dcdcdc;
+margin-bottom: 30px;
+padding-bottom:20px;
+}
+
+.matrimony-profile-results .control-group {
+text-align:left;
+}
+

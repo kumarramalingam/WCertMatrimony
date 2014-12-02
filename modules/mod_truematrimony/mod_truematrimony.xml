@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.0"
+	method="upgrade"
+	client="site">	
+	<name>mod_truematrimony</name>
+	<creationDate>5 Aug 2014</creationDate>
+	<author>Kumar Ramalingam</author>
+	<authorEmail>kumar@w3ert.in</authorEmail>
+	<copyright>Copyright (c) w3cert.in. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.1.0</version>
+	<description>Matrimony module for search profiles</description>
+	
+<files>
+	<filename module="mod_truematrimony">mod_truematrimony.php</filename>
+	<filename>index.html</filename>    	
+	<filename>mod_truematrimony.xml</filename>
+	<filename>helper.php</filename>	 
+	<folder>tmpl</folder>
+	<folder>media</folder> 
+</files>
+<languages folder="language">
+		<language tag="en-GB">en-GB.mod_truematrimony.ini</language>
+</languages>
+<config>
+	<fields name="params" >
+	    <fieldset name="request" addfieldpath="administrator/components/com_truematrimony/helpers"> 
+			
+			<field name="show_profilename" type="radio" label="COM_TRUEMATRIMONY_SHOW_PROFILENAME"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+	
+		   <field name="show_gender" type="radio" label="COM_TRUEMATRIMONY_SHOW_GENDER"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+		   </field>
+		   
+		   <field name="show_dob" type="radio" label="Show DOB"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+		   <field name="show_age" type="radio" label="Show Age"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_religion" type="radio" label="COM_TRUEMATRIMONY_SHOW_RELIGION"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_mothertongue" type="radio" label="COM_TRUEMATRIMONY_SHOW_MOTHERTONGUE"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_caste" type="radio" label="COM_TRUEMATRIMONY_SHOW_CASTE"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_country" type="radio" label="COM_TRUEMATRIMONY_SHOW_COUNTRY"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_mobileno" type="radio" label="COM_TRUEMATRIMONY_SHOW_MOBILE_NUMBER"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_country" type="radio" label="COM_TRUEMATRIMONY_SHOW_COUNTRY"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_email" type="radio" label="COM_TRUEMATRIMONY_SHOW_EMAIL"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_monthlyincome" type="radio" label="COM_TRUEMATRIMONY_SHOW_MONTHLY_INCOME"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+          
+			 <field name="show_highesteducate" type="radio" label="COM_TRUEMATRIMONY_SHOW_HIGHEST_EDUCATION"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_occupation" type="radio" label="COM_TRUEMATRIMONY_SHOW_OCCUPATION"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>		
+			
+			<field name="show_employedin" type="radio" label="COM_TRUEMATRIMONY_SHOW_EMPLOYEDIN"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_height" type="radio" label="COM_TRUEMATRIMONY_SHOW_HEIGHT"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>	
+			
+			<field name="show_weight" type="radio" label="COM_TRUEMATRIMONY_SHOW_WEIGHT"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_bodytype" type="radio" label="COM_TRUEMATRIMONY_SHOW_BODY_TYPE"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_complexion" type="radio" label="COM_TRUEMATRIMONY_SHOW_COMPLEXION"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_physical" type="radio" label="COM_TRUEMATRIMONY_SHOW_PHYSICAL_STATUS"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_mother" type="radio" label="COM_TRUEMATRIMONY_SHOW_MOTHER_NAME"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_father" type="radio" label="COM_TRUEMATRIMONY_SHOW_FATHER_NAME"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_siblings" type="radio" label="COM_TRUEMATRIMONY_SHOW_SIBLINGS"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_birthtime" type="radio" label="COM_TRUEMATRIMONY_SHOW_BIRTH_TIME"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_birthplace" type="radio" label="COM_TRUEMATRIMONY_SHOW_BIRTH_PLACE"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_native" type="radio" label="COM_TRUEMATRIMONY_SHOW_NATIVE"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_templename" type="radio" label="COM_TRUEMATRIMONY_SHOW_TEMPLE_NAME"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_bloodgroup" type="radio" label="COM_TRUEMATRIMONY_SHOW_BLOOD_GROUP"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_janmaraase" type="radio" label="COM_TRUEMATRIMONY_SHOW_JANMA_RAASE"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>	
+			
+			<field name="show_janmalagnam" type="radio" label="COM_TRUEMATRIMONY_SHOW_JANMA_LAGNAM"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>			
+			
+			<field name="show_janmanakshatra" type="radio" label="COM_TRUEMATRIMONY_SHOW_JANMA_NAKSHATRAM"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_ragugathu" type="radio" label="COM_TRUEMATRIMONY_SHOW_RAGU_AND_GATHU"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_sevai" type="radio" label="COM_TRUEMATRIMONY_SHOW_SEVAI"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>		
+			
+			<field name="show_pavagam" type="radio" label="COM_TRUEMATRIMONY_SHOW_PAVAGAM_CHANGE"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_jananakalam" type="radio" label="COM_TRUEMATRIMONY_SHOW_JANANA_KALAM"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_dasabukthi" type="radio" label="COM_TRUEMATRIMONY_SHOW_DASA_BUKTHI"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_additinfo" type="radio" label="COM_TRUEMATRIMONY_SHOW_ADDITIONAL_INFO"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_expectations" type="radio" label="COM_TRUEMATRIMONY_SHOW_EXPECTATIONS"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+							
+	 	</fieldset>
+	 </fields>
+</config>
+</extension>

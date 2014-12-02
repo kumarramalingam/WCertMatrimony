@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* com_truematrimony
+* 
+* author    Kumar Ramalingam - http://www.w3cert.in
+* mail      kumar@w3cert.in
+* copyright Copyright (C) 2012 W3Cert.in All Rights Reserved.
+* @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+* Websites: http://w3cert.in
+
+-->
+
+<form validate="true" serverside_validate="true">
+        
+        <fieldset name="items" class="span6"
+                label="COM_TRUEMATRIMONY_ORDER_GROUP_BASIC"
+        >                      
+                <field name="profile_name" type="text"
+                        label="COM_TRUEMATRIMONY_PROFILE_NAME"
+                        class="input-xlarge"
+                        required="true"
+                />
+                
+                <field name="package_id" type="list"
+					id="package_id"
+					source_file="admin://components/com_truematrimony/helpers/select.php"
+					source_class="TrueMatrimonyHelperSelect" source_method="getPackagelist"
+					sortable="true" tdwidth="15%"
+					show_link="true"
+					default="1"
+					url="index.php?option=com_truematrimony&amp;view=profile&amp;id=[ITEM:ID]"
+					label="COM_TRUEMATRIMONY_PROFILE_PACKAGE_NAME_LIST"								
+                />
+                
+                <field name="package_status" type="list" label="COM_TRUEMATRIMONY_PROFILE_PACKAGE_STATUS"                        
+                        sortable="true" tdwidth="15%"
+						default="1"
+                >       
+                        <option value="0"> Select Status </option>
+                        <option value="1">Pending</option>
+                        <option value="2">Approved</option>
+                        <option value="3">Discard</option>
+                </field>           
+                           
+                <field name="profilerefer_id" type="list"  
+                 	id="profilerefer_id"                    
+                    source_file="admin://components/com_truematrimony/helpers/select.php"
+					source_class="TrueMatrimonyHelperSelect" source_method="getProfileforlist"
+					sortable="true" tdwidth="15%"
+					show_link="true"
+					default="1"
+					url="index.php?option=com_truematrimony&amp;view=profile&amp;id=[ITEM:ID]"
+					label="COM_MATRIMONY_REGISTER_FOR"	
+                />
+                                             
+                <field name="gender" type="radio"
+                 	id="gender" 
+                 	class="inputbox"
+                    filter="intval" size="1" default="1"                   
+                   	label="COM_MATRIMONY_REGISTER_GENDER"	
+                >
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                </field>
+                
+                <field name="dob" type="calendar"
+                	id="dob"
+                	label="COM_TRUEMATRIMONY_DOB" />
+                
+                <field name="religion_id" type="list"   
+                 	id="religion_id"                    
+                    source_file="admin://components/com_truematrimony/helpers/select.php"
+					source_class="TrueMatrimonyHelperSelect" source_method="getReligionlist"
+					sortable="true" tdwidth="15%"
+					show_link="true"
+					default="1"
+					url="index.php?option=com_truematrimony&amp;view=profile&amp;id=[ITEM:ID]"
+					label="COM_MATRIMONY_REGISTER_RELIGION"	
+                />
+                
+                <field name="mothertongue_id" type="list" 
+                 	id="mothertongue_id"                    
+                    source_file="admin://components/com_truematrimony/helpers/select.php"
+					source_class="TrueMatrimonyHelperSelect" source_method="getMothertongueslist"
+					sortable="true" tdwidth="15%"
+					show_link="true"
+					default="1"
+					url="index.php?option=com_truematrimony&amp;view=profile&amp;id=[ITEM:ID]"
+					label="COM_MATRIMONY_REGISTER_MOTHER_TONGUE"	
+                />
+                
+                <field name="caste_id" type="list"   
+                 	id="caste_id"                    
+                    source_file="admin://components/com_truematrimony/helpers/select.php"
+					source_class="TrueMatrimonyHelperSelect" source_method="getCastelist"
+					sortable="true" tdwidth="15%"
+					show_link="true"
+					default="0"
+					url="index.php?option=com_truematrimony&amp;view=profile&amp;id=[ITEM:ID]"
+					label="COM_MATRIMONY_REGISTER_CASTE_DIVISION_LIST"	
+                />
+                
+                <field name="kulaguru_id" type="list"   
+                 	id="kulaguru_id"                    
+                    source_file="admin://components/com_truematrimony/helpers/select.php"
+					source_class="TrueMatrimonyHelperSelect" source_method="getProfilekulaguru"
+					sortable="true" tdwidth="15%"
+					show_link="true"
+					default="0"
+					url="index.php?option=com_truematrimony&amp;view=profile&amp;id=[ITEM:ID]"
+					label="COM_MATRIMONY_REGISTER_KULA_GURU"	
+                />
+                         
+                <field name="country_id" type="list"   
+                 	id="country_id"                    
+                    source_file="admin://components/com_truematrimony/helpers/select.php"
+					source_class="TrueMatrimonyHelperSelect" source_method="getCountrylist"
+					sortable="true" tdwidth="15%"
+					show_link="true"
+					default="1"
+					url="index.php?option=com_truematrimony&amp;view=profile&amp;id=[ITEM:ID]"
+					label="COM_MATRIMONY_REGISTER_COUNTRY"	
+                />                
+                                   
+                <field name="mobile_number" type="text"
+						id="mobile_number"
+                        label="COM_MATRIMONY_REGISTER_MOBILE_NUMBER"
+                        class="input-xlarge"
+                        
+                />                
+                                  
+                 <field name="email" type="text"
+                        label="COM_MATRIMONY_REGISTER_EMAIL"
+                        class="input-xlarge"
+                        required="true"
+                />
+                
+                <field name="pwd" type="password"
+                        label="COM_MATRIMONY_REGISTER_PASSWORD"
+                        class="input-xlarge"
+                        required="true"
+                />
+                                       
+                <field name="highesteducation_id" type="list"   
+                 	id="highesteducation_id"                    
+                    source_file="admin://components/com_truematrimony/helpers/select.php"
+					source_class="TrueMatrimonyHelperSelect" source_method="getHighestedu"
+					sortable="true" tdwidth="15%"
+					show_link="true"
+					default="0"
+					url="index.php?option=com_truematrimony&amp;view=profile&amp;id=[ITEM:ID]"
+					label="COM_TRUEMATRIMONY_HIGHEST_EDUCATION"	
+                />     
+                
+                <field name="occupation_id" type="list"   
+                 	id="occupation_id"                    
+                    source_file="admin://components/com_truematrimony/helpers/select.php"
+					source_class="TrueMatrimonyHelperSelect" source_method="getOccupationlist"
+					sortable="true" tdwidth="15%"
+					show_link="true"
+					default="0"
+					url="index.php?option=com_truematrimony&amp;view=profile&amp;id=[ITEM:ID]"
+					label="COM_TRUEMATRIMONY_OCCUPATION"	
+                />            
+                
+                <field name="employedin_id" type="list"   
+                 	id="employedin_id"                    
+                    source_file="admin://components/com_truematrimony/helpers/select.php"
+					source_class="TrueMatrimonyHelperSelect" source_method="getEmployedinlist"
+					sortable="true" tdwidth="15%"
+					show_link="true"
+					default="0"
+					url="index.php?option=com_truematrimony&amp;view=profile&amp;id=[ITEM:ID]"
+					label="COM_TRUEMATRIMONY_PROFILE_EMPLOYED_IN"	
+                />    
+                
+                <field name="monthly_income" type="text"
+                        label="COM_TRUEMATRIMONY_PROFILE_MONTHLY_INCOME"
+                        class="input-xlarge"
+                        
+                />
+                                                         
+                <field name="father_name" type="text"
+						id="father_name"	
+                        label="COM_TRUEMATRIMONY_PROFILE_FATHER_NAME"
+                        class="input-xlarge"
+                />
+                
+                <field name="mother_name" type="text"
+                        label="COM_TRUEMATRIMONY_PROFILE_MOTHER_NAME"
+                        class="input-xlarge"
+                        
+                />
+                
+                <field name="siblings_members" type="text"
+                        label="COM_TRUEMATRIMONY_PROFILE_SIBLINGS"
+                        class="input-xlarge"
+                />                             
+                
+                <field name="birth_time" type="text"
+                        label="COM_TRUEMATRIMONY_PROFILE_BIRTH_TIME"
+                        class="input-xlarge"
+                />
+                
+                <field name="birth_place" type="text"
+                        label="COM_TRUEMATRIMONY_PROFILE_BIRTH_PLACE"
+                        class="input-xlarge"                       
+                />
+                
+                </fieldset>
+                
+                <fieldset name="items_second" class="span6"
+                label="COM_TRUEMATRIMONY_ORDER_GROUP_BASIC"
+                >  
+                
+                <field name="native" type="text"
+                        label="COM_TRUEMATRIMONY_PROFILE_NATIVE"
+                        class="input-xlarge"                        
+                />    
+                
+                <field name="bloodgroup_id" type="list"   
+                 	id="bloodgroup_id"                    
+                    source_file="admin://components/com_truematrimony/helpers/select.php"
+					source_class="TrueMatrimonyHelperSelect" source_method="getBloodgroup"
+					sortable="true" tdwidth="15%"
+					show_link="true"
+					default="0"
+					url="index.php?option=com_truematrimony&amp;view=profile&amp;id=[ITEM:ID]"
+					label="COM_TRUEMATRIMONY_PROFILE_BLOOD_GROUP"	
+                />      
+                
+                <field name="janmaraase_id" type="list"   
+                 	id="janmaraase_id"                    
+                    source_file="admin://components/com_truematrimony/helpers/select.php"
+					source_class="TrueMatrimonyHelperSelect" source_method="getJanmaraasi"
+					sortable="true" tdwidth="15%"
+					show_link="true"
+					default="0"
+					url="index.php?option=com_truematrimony&amp;view=profile&amp;id=[ITEM:ID]"
+					label="COM_TRUEMATRIMONY_PROFILE_JANMA_RAASI"	
+                /> 
+                
+                <field name="janma_lagnam" type="text"
+                        label="COM_TRUEMATRIMONY_PROFILE_JANMA_LAGNAM"
+                        class="input-xlarge"
+                />
+                
+                <field name="janma_nakshatra" type="text"
+                        label="COM_TRUEMATRIMONY_PROFILE_JANMA_NAKSHATRAM"
+                        class="input-xlarge"
+                        
+                />
+                
+                <field name="temple_name" type="text"
+                        label="COM_TRUEMATRIMONY_PROFILE_TEMPLE_NAME"
+                        class="input-xlarge"
+                        
+                />
+                
+                <field name="ragu_gathu" type="text"
+                        label="COM_TRUEMATRIMONY_PROFILE_RAHU_AND_KETHU"
+                        class="input-xlarge"
+                        
+                />
+                
+                <field name="sevai_opt" type="text"
+                        label="COM_TRUEMATRIMONY_PROFILE_SEVAI_OPTION"
+                        class="input-xlarge"
+                        
+                />     
+                
+                <field name="pavagam_change" type="textarea"
+                        label="COM_TRUEMATRIMONY_PROFILE_PAVAGAM_CHANGE"
+                        class="input-xlarge"
+                />
+                
+                <field name="janana_kalam" type="textarea"
+                        label="COM_TRUEMATRIMONY_PROFILE_JANANA_KALAM"
+                        class="input-xlarge"
+                />
+                
+                <field name="dasa_bukthi" type="textarea"
+                        label="COM_TRUEMATRIMONY_PROFILE_NADAAPU_DASA_BUKTHI"
+                        class="input-xlarge"
+                />        
+                
+                <field name="additional_info" type="textarea"
+                        label="COM_TRUEMATRIMONY_PROFILE_ADDITIONAL_INFORMATION"
+                        class="input-xlarge"
+                /> 
+                
+                <field name="expectations" type="textarea"
+                        label="COM_TRUEMATRIMONY_PROFILE_EXPECTATIONS"
+                        class="input-xlarge"
+                       
+                /> 
+                                                 
+                <field name="height_id" type="list"   
+                 	id="height_id"                    
+                    source_file="admin://components/com_truematrimony/helpers/select.php"
+					source_class="TrueMatrimonyHelperSelect" source_method="getProfileheight"
+					sortable="true" tdwidth="15%"
+					show_link="true"
+					default="0"
+					url="index.php?option=com_truematrimony&amp;view=profile&amp;id=[ITEM:ID]"
+					label="COM_TRUEMATRIMONY_PROFILE_HEIGHT"	
+                />        
+                
+                <field name="weight_id" type="list"   
+                 	id="weight_id"                    
+                    source_file="admin://components/com_truematrimony/helpers/select.php"
+					source_class="TrueMatrimonyHelperSelect" source_method="getProfileweight"
+					sortable="true" tdwidth="15%"
+					show_link="true"
+					default="0"
+					url="index.php?option=com_truematrimony&amp;view=profile&amp;id=[ITEM:ID]"
+					label="COM_TRUEMATRIMONY_PROFILE_WEIGHT"	
+                />
+                
+                <field name="bodytype_id" type="list"   
+                 	id="bodytype_id"                    
+                    source_file="admin://components/com_truematrimony/helpers/select.php"
+					source_class="TrueMatrimonyHelperSelect" source_method="getProfilebodytype"
+					sortable="true" tdwidth="15%"
+					show_link="true"
+					default="0"
+					url="index.php?option=com_truematrimony&amp;view=profile&amp;id=[ITEM:ID]"
+					label="COM_TRUEMATRIMONY_PROFILE_BODY_TYPE"	
+                />
+                
+                <field name="complexion_id" type="list"   
+                 	id="complexion_id"                    
+                    source_file="admin://components/com_truematrimony/helpers/select.php"
+					source_class="TrueMatrimonyHelperSelect" source_method="getProfilecomplexion"
+					sortable="true" tdwidth="15%"
+					show_link="true"
+					default="0"
+					url="index.php?option=com_truematrimony&amp;view=profile&amp;id=[ITEM:ID]"
+					label="COM_TRUEMATRIMONY_PROFILE_COMPLEXION"	
+                />
+                                              
+                <field name="physicalstate_id" type="list"   
+                 	id="physicalstate_id"                    
+                    source_file="admin://components/com_truematrimony/helpers/select.php"
+					source_class="TrueMatrimonyHelperSelect" source_method="getProfilephysicalstatus"
+					sortable="true" tdwidth="15%"
+					show_link="true"
+					default="1"
+					url="index.php?option=com_truematrimony&amp;view=profile&amp;id=[ITEM:ID]"
+					label="COM_TRUEMATRIMONY_PROFILE_PHYSICAL_STATUS"	
+                />
+                                                                                                  
+                <field name="access" type="accesslevel"
+                        label="COM_TRUEMATRIMONY_ACCESS_LEVEL"
+                        class="input-xlarge"
+                        required="true"
+                />    
+               
+                <field name="enabled" type="radio" label="JPUBLISHED"                        
+                        class="inputbox btn-group"
+                        filter="intval" size="1" default="1"
+                >
+                        <option value="1">JPUBLISHED</option>
+                        <option value="0">JUNPUBLISHED</option>
+                </field>                                          
+       
+       </fieldset>  
+                
+</form>
+

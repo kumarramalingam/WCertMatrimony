@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>True Matrimony</name>
+	<creationDate>Aug 2014</creationDate>
+	<author>Kumar Ramalingam</author>
+	<authorEmail>kumar@w3ert.in</authorEmail>
+	<copyright>Copyright (c) w3cert.in. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.1.0</version>
+	<description>COM_TRUEMATRIMONY_COMPONENT_DESCRIPTION</description>
+	<scriptfile>script.truematrimony.php</scriptfile>
+	 	
+	<files folder="site/com_truematrimony">
+		<filename>index.html</filename>
+		<filename>truematrimony.php</filename>
+		<filename>controller.php</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+	</files>
+	<languages folder="site/language">
+		<language tag="en-GB">en-GB.com_truematrimony.ini</language>
+		<language tag="en-GB">en-GB.com_truematrimony.sys.ini</language>
+	</languages >
+         
+	<media destination="truematrimony" folder="media/truematrimony">		
+		<folder>assets</folder>
+		<folder>images</folder>
+		<folder>profiles</folder>
+	</media>
+
+	<administration>
+		<menu>COM_TRUEMATRIMONY</menu>
+		<files folder="admin/com_truematrimony">
+			<filename>index.html</filename>
+			<filename>truematrimony.php</filename>			
+			<filename>version.php</filename>
+			<filename>dispatcher.php</filename>
+			<filename>fof.xml</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<folder>models</folder>
+			<folder>fields</folder>
+			<folder>views</folder>			
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>tables</folder>			
+			<folder>library</folder>
+		</files>
+		
+		<languages folder="admin/language">
+			<language tag="en-GB">en-GB.com_truematrimony.ini</language>
+			<language tag="en-GB">en-GB.com_truematrimony.sys.ini</language>		
+		</languages>
+
+	</administration>
+	 
+</extension>

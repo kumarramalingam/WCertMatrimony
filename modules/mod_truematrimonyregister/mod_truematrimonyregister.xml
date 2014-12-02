@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.0"
+	method="upgrade"
+	client="site">	
+	<name>TrueMatrimony Register</name>
+	<creationDate>17 Oct 2014</creationDate>
+	<author>Kumar Ramalingam</author>
+	<authorEmail>kumar@w3ert.in</authorEmail>
+	<copyright>Copyright (c) w3cert.in. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.1.0</version>
+	<description>True Matrimony module for register profiles</description>
+	
+<files>
+	<filename module="mod_truematrimonyregister">mod_truematrimonyregister.php</filename>
+	<filename>index.html</filename>    	
+	<filename>mod_truematrimonyregister.xml</filename>
+	<filename>helper.php</filename>	 
+	<folder>tmpl</folder>
+</files>
+<languages folder="language">
+		<language tag="en-GB">en-GB.mod_truematrimonyregister.ini</language>
+</languages>
+<config>
+	<fields name="params" >
+		
+	    <fieldset name="request" addfieldpath="administrator/components/com_truematrimony/helpers"> 
+			
+			<field name="show_profilefor" type="radio" label="COM_TRUEMATRIMONY_SHOW_REGISTER_PROFILE_FOR"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+	
+		   <field name="show_regname" type="radio" label="COM_TRUEMATRIMONY_SHOW_REGISTER_PROFILE_NAME"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+		   </field>
+		   
+		   <field name="show_regemail" type="radio" label="COM_TRUEMATRIMONY_SHOW_REGISTER_PROFILE_EMAIL"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+		   <field name="show_regpwd" type="radio" label="COM_TRUEMATRIMONY_SHOW_REGISTER_PWD"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_regmobile" type="radio" label="COM_TRUEMATRIMONY_SHOW_REGISTER_MOBILE_NUMBER"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_regdob" type="radio" label="COM_TRUEMATRIMONY_SHOW_REGISTER_DATE_OF_BIRTH"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_reggender" type="radio" label="COM_TRUEMATRIMONY_SHOW_REGISTER_GENDER"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_regkulam" type="radio" label="COM_TRUEMATRIMONY_SHOW_REGISTER_KULAM_KOOTAM"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_regkulaguru" type="radio" label="COM_TRUEMATRIMONY_SHOW_REGISTER_KULAGURU"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			
+			<field name="show_regcountry" type="radio" label="COM_TRUEMATRIMONY_SHOW_REGISTER_COUNTRY"
+				 class="btn-group" filter="intval"
+				size="1" default="1">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+									
+	 	</fieldset>
+	 </fields>
+</config>
+</extension>

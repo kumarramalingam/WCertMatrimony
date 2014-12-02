@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form validate="true" serverside_validate="true">
+        
+        <fieldset name="items" class="span6"
+                label="COM_TRUEMATRIMONY_ORDER_GROUP_BASIC"
+        >  
+        
+          <field name="profile_name" type="text"
+                        label="COM_TRUEMATRIMONY_PROFILE_NAME"
+                        class="input-xlarge"
+                        required="true"
+          />
+          
+          <field name="profile_email" type="text"
+                        label="COM_TRUEMATRIMONY_PROFILE_EMAIL"
+                        class="input-xlarge"
+                        required="true"
+          />
+          
+          <field name="profile_mobile" type="text"
+                        label="COM_TRUEMATRIMONY_PROFILE_MOBILE"
+                        class="input-xlarge"
+                        required="true"
+          />
+          
+          <field name="interest_to_profile_name" type="text"
+                        label="COM_TRUEMATRIMONY_INTEREST_TO_PROFILE_NAME"
+                        class="input-xlarge"
+                        required="true"
+          />
+          
+          <field name="interest_to_profile_email" type="text"
+                        label="COM_TRUEMATRIMONY_INTEREST_TO_PROFILE_EMAIL"
+                        class="input-xlarge"
+                        required="true"
+          />
+          
+          <field name="interest_to_mobile" type="text"
+                        label="COM_TRUEMATRIMONY_INTEREST_TO_MOBILE"
+                        class="input-xlarge"
+                        required="true"
+          />
+          
+          <field name="interest_date" type="text"
+                        label="COM_TRUEMATRIMONY_INTEREST_TO_PROFILE_DATE"
+                        class="input-xlarge"
+                        required="true"
+          />
+          
+          <field name="interest_to_commends" type="text"
+                        label="COM_TRUEMATRIMONY_INTEREST_TO_PROFILE_COMMENDS"
+                        class="input-xlarge"
+                        required="true"
+          />
+               
+                      
+       </fieldset>  
+                
+</form>

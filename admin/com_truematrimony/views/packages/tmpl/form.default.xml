@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form type="browse" show_header="1" show_filters="1"
+	show_pagination="1" norows_placeholder="COM_TRUEMATRIMONY_COMMON_NORECORDS">
+	
+	<headerset>		
+		<header name="truematrimony_package_id" type="rowselect" label="COM_TRUEMATRIMONY_PACKAGE_ID"/>	
+		<header name="package_name" type="fieldsearchable" label="COM_TRUEMATRIMONY_PACKAGE_NAME" />		
+		<header name="package_cost" label="COM_TRUEMATRIMONY_PACKAGE_COST" />
+		<header name="package_month" label="COM_TRUEMATRIMONY_PACKAGE_TIME_MONTH" />
+		<header name="package_year" label="COM_TRUEMATRIMONY_PACKAGE_TIME_YEAR" />		
+		<header name="package_start" label="COM_TRUEMATRIMONY_PACKAGE_START_DATE" />
+		<header name="package_end" label="COM_TRUEMATRIMONY_PACKAGE_END_DATE" />
+		<header name="profile_limit" label="COM_TRUEMATRIMONY_PACKAGE_PROFILE_LIMIT" />
+	</headerset>
+	
+	<fieldset name="items">		
+		<field name="truematrimony_package_id" type="selectrow"/>		
+		<field name="package_name" type="text" 
+		show_link="true"
+		url="index.php?option=com_truematrimony&amp;view=package&amp;id=[ITEM:ID]" 
+		/>	
+		<field name="package_cost" type="text" />
+		<field name="package_month" type="text" />		
+		<field name="package_year" type="text" />
+		<field name="package_start" type="calendar" />
+		<field name="package_end" type="calendar" />		
+		<field name="profile_limit" type="text"/>
+	</fieldset>
+</form>

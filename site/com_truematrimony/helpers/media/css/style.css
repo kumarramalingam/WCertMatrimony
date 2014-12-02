@@ -1,0 +1,36 @@
+.truematrimony-profile-info .control-groups {
+position:relative;
+left:25px;
+}
+
+.profile-plan-ul {
+list-style:none;
+}
+
+#viewinterests {
+max-width:600px;
+}
+
+.interest-profiles-ul {
+list-style-type:none;
+}
+
+.interest-profiles-lists {
+border-bottom:1px solid #dcdcdc;
+margin-top:10px;
+margin-bottom:10px;
+padding-bottom:10px;
+}
+
+.interest-profiles-lists .control-label {
+padding-right:15px;
+}
+
+.interest-profiles-lists .control-groups {
+margin-top:6px;
+}
+
+#viewinterests .viewinterests-close {
+float:right;
+margin-top:-33px;
+}

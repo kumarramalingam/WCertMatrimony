@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+* com_truematrimony
+* 
+* author    Kumar Ramalingam - http://www.w3cert.in
+* mail      kumar@w3cert.in
+* copyright Copyright (C) 2012 W3Cert.in All Rights Reserved.
+* @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+* Websites: http://w3cert.in
+
+-->
+
+<form validate="true" serverside_validate="true">
+        
+        <fieldset name="items"
+                label="COM_TRUEMATRIMONY_PROFILE_PACKAGE_PLAN"
+        >                      
+                <field name="package_name" type="text"
+                        label="COM_TRUEMATRIMONY_PACKAGE_NAME"
+                        class="input-xlarge"
+                        required="true"
+                />
+                                          
+                <field name="package_cost" type="text"
+						id="package_cost"
+                        label="COM_TRUEMATRIMONY_PACKAGE_COST"
+                        class="input-xlarge" 
+                        required="true"                       
+                />                
+                
+                <field name="package_start" type="calendar"
+                	id="package_start"
+                	default="now"
+                	label="COM_TRUEMATRIMONY_PACKAGE_START" />
+                	
+                <field name="package_end" type="calendar"
+                	id="package_end"
+                	default="now"
+                	label="COM_TRUEMATRIMONY_PACKAGE_END" />
+                	
+                <field name="package_lifetime" type="checkbox"
+					id="package_lifetime"
+					label="COM_TRUEMATRIMONY_PACKAGE_LIFETIME"
+                />	
+                                    
+                <field name="package_month" type="list"   
+                 	id="package_month"                    
+                    default="0"
+					label="COM_TRUEMATRIMONY_PACKAGE_TIME_MONTH"	
+                >
+                <option value="0">0 Month</option>
+                <option value="1">1 Month</option>
+                <option value="2">2 Months</option>
+                <option value="3">3 Months</option>
+                <option value="4">4 Months</option>
+                <option value="5">5 Months</option>
+                <option value="6">6 Months</option>
+                <option value="7">7 Months</option>
+                <option value="8">8 Months</option>
+                <option value="9">9 Months</option>
+                <option value="10">10 Months</option>
+                <option value="11">11 Months</option>
+                <option value="12">12 Months</option>
+                </field>
+                
+                <field name="package_year" type="list"   
+                 	id="package_year"                    
+                    default="0"
+					label="COM_TRUEMATRIMONY_PACKAGE_TIME_YEAR"	
+                >
+                <option value="0">0 Year</option>
+                <option value="1">1 Year</option>
+                <option value="2">2 Years</option>
+                <option value="3">3 Years</option>
+                <option value="Lifetime">Life time</option>                
+                </field>                
+                
+                <field name="profile_limit" type="list"
+					   id="profile_limit"
+                       label="COM_TRUEMATRIMONY_PACKAGE_PROFILE_LIMIT"
+                       default="0"
+                       required="true"
+                >
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="150">150</option>
+                <option value="200">200</option>
+                <option value="250">250</option>
+                <option value="300">300</option>
+                <option value="350">350</option>
+                <option value="400">400</option>
+                <option value="450">450</option>
+                <option value="500">500</option>
+                <option value="Unlimited">Unlimited</option>                
+                </field>    
+                
+                <field name="access" type="accesslevel"
+                        label="COM_TRUEMATRIMONY_ACCESS_LEVEL"
+                        class="input-xlarge"
+                        required="true"
+                />      
+       
+       </fieldset>  
+                
+</form>
+
